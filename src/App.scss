@@ -46,7 +46,7 @@
 div[class|="grid"] {
   background-color: lightblue;
 
-  div {
+  & > div {
     background-color: lightcyan;
   }
 }
