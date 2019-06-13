@@ -9,7 +9,7 @@
   }
 
   &-row {
-    display: block;
+    display: flex;
     padding: #{$gutter / 2} 0;
   }
 
@@ -18,8 +18,8 @@
 
     &-col-#{$i} {
       margin: 0 #{$gutter / 2};
-      width: calc(#{$width} - #{$gutter});
-      display: inline-block;
+      max-width: calc(#{$width} - #{$gutter});
+      flex: 1;
     }
   }
 }
