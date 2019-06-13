@@ -5,6 +5,9 @@ import React from 'react';
 function App() {
   return (
     <>
+      <p>
+        Open your dev-tools to inspect the grid deeply
+      </p>
       <div className="example_basic">
         <div className="l-container">
           <div className="l-row">

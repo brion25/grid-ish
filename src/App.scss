@@ -1,18 +1,37 @@
+/**
+ * Basic grid system
+ */
 .l{
-  &-container {
+  $gutter: 10px;
 
+  &-container {
+    padding: 0 #{$gutter / 2}
   }
 
   &-row {
-    display: inline-block;
+    display: block;
+    padding: #{$gutter / 2} 0;
   }
 
   @for $i from 1 through 12 {
-    $width: percentage(1/$i);
+    $width: percentage($i / 12);
 
     &-col-#{$i} {
-      width: $width;
-      display: inline;
+      margin: 0 #{$gutter / 2};
+      width: calc(#{$width} - #{$gutter});
+      display: inline-block;
     }
   }
+}
+
+/**
+ * Helpers classes
+ */
+
+div[class|="l-col"] {
+  background-color: lightblue;
+}
+
+.l-container {
+  background-color: lightcyan;
 }
