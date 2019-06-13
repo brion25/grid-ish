@@ -9,63 +9,30 @@ function App() {
         Open your dev-tools to inspect the grid deeply
       </p>
       <div className="example_basic">
-        <div className="l-container">
-          <div className="l-row">
-            <div className="l-col-12">
-              l-col-12
-            </div>
+        <p>Grid 2x2</p>
+        <div className="grid-2-2">
+          <div>1/1</div>
+          <div>1/2</div>
+          <div>2/1</div>
+          <div>2/2</div>
+        </div>
+        <p>Grid 2x2 with 10px of gutter</p>
+        <div className="grid-2-2-gutter-10">
+          <div>1/1</div>
+          <div>1/2</div>
+          <div>2/1</div>
+          <div>2/2</div>
+        </div>
+        <p>Grid advanced example</p>
+        <div className="grid-2-4">
+          <div className="huge-element">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </div>
-          <div className="l-row">
-            <div className="l-col-6">
-              l-col-6
-            </div>
-            <div className="l-col-6">
-              l-col-6
-            </div>
+          <div className="bottom-element">
+            test
           </div>
-          <div className="l-row">
-            <div className="l-col-4">
-              l-col-4
-            </div>
-            <div className="l-col-4">
-              l-col-4
-            </div>
-            <div className="l-col-4">
-              l-col-4
-            </div>
-          </div>
-          {/*
-          <div className="l-row">
-            <div className="l-col-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
-            <div className="l-col-4">
-              test
-            </div>
-            <div className="l-col-4">
-              another test
-            </div>
-          </div>
-           */}
-          <div className="l-row">
-            <div className="l-col-2">
-              l-col-2
-            </div>
-            <div className="l-col-2">
-              l-col-2
-            </div>
-            <div className="l-col-2">
-              l-col-2
-            </div>
-            <div className="l-col-2">
-              l-col-2
-            </div>
-            <div className="l-col-2">
-              l-col-2
-            </div>
-            <div className="l-col-2">
-              l-col-2
-            </div>
+          <div className="top-element">
+            another test
           </div>
         </div>
       </div>
